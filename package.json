@@ -26,6 +26,7 @@
     "electron-rebuild": "^1.8.8"
   },
   "dependencies": {
-    "serialport": "^8.0.5"
+    "serialport": "^8.0.5",
+    "xterm": "^4.3.0"
   }
 }

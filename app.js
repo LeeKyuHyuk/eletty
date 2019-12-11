@@ -1,9 +1,10 @@
 const COM_PORT = "COM3"
+const BAUDRATE = 115200
 
 const SerialPort = require('serialport')
 const Readline = require('@serialport/parser-readline')
 const port = new SerialPort(COM_PORT, {
-    baudRate: 115200,
+    baudRate: BAUDRATE,
     parser: new Readline({ delimiter: '\r\n' })
 });
 
@@ -27,11 +28,8 @@ port.on('data', function (data) {
     let string = String(data);
     for (let i = 0; i < string.length; i++) {
         let char = string.charCodeAt(i)
-        if(char == 10)
-            log.innerHTML = log.innerHTML + "<br>";
-        else
-            log.innerHTML = log.innerHTML + String.fromCharCode(char);
+        term.write(String.fromCharCode(char))
     }
 })
 
-port.write('Hello eletty!\n')
+// port.write('Hello eletty!\n')
