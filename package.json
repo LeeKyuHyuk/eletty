@@ -4,7 +4,8 @@
   "description": "a free Serial and SSH client for Windows, OSX, Linux",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "install": "electron-rebuild"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
   },
   "homepage": "https://github.com/LeeKyuHyuk/eletty#readme",
   "devDependencies": {
-    "electron": "^7.1.4"
+    "electron": "^7.1.4",
+    "electron-rebuild": "^1.8.8"
+  },
+  "dependencies": {
+    "serialport": "^8.0.5"
   }
 }
