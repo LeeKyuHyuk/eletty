@@ -1,0 +1,26 @@
+{
+  "name": "eletty",
+  "version": "1.0.0",
+  "description": "a free Serial and SSH client for Windows, OSX, Linux",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LeeKyuHyuk/eletty.git"
+  },
+  "keywords": [
+    "serial",
+    "ssh"
+  ],
+  "author": "KyuHyuk Lee",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LeeKyuHyuk/eletty/issues"
+  },
+  "homepage": "https://github.com/LeeKyuHyuk/eletty#readme",
+  "devDependencies": {
+    "electron": "^7.1.4"
+  }
+}
